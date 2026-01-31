@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teleporty! One</title>
+</head>
+
+<body>
+  <div id="game-ui">
+    <div id="instructions">
+      <h2>Teleporty! One</h2>
+      <p>WASD to Move | SPACE to Jump</p>
+      <p>Hold RIGHT CLICK to Freeze & Aim</p>
+      <p>Release to Teleport (Cost: 1 Orb)</p>
+    </div>
+    <div id="tutorial-message">Collect the Orb to begin.</div>
+    <div id="hud">
+      <div class="hud-item">Orbs: <span id="orb-count">0</span></div>
+      <div class="hud-item">Key: <span id="key-indicator">❌</span></div>
+    </div>
+    <div id="reticle"></div>
+  </div>
+  <div id="freeze-overlay"></div>
+  <link rel="stylesheet" href="./src/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.170.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
