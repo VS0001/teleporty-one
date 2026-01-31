@@ -1,4 +1,4 @@
-import './style.css';
+// Style imported in HTML now
 import * as THREE from 'three';
 
 /**
