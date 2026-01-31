@@ -24,7 +24,15 @@
     <div id="reticle"></div>
   </div>
   <div id="freeze-overlay"></div>
-  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="./src/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.170.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
